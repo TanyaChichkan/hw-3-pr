@@ -1,0 +1,207 @@
+.section_text {
+  color: #000; }
+.section_card {
+  color: #bbbeaa; }
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+p {
+  margin: 0;
+  padding: 0; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block; }
+
+.header {
+  background-image: url("../img/m-h-day.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 718px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-bottom-right-radius: 40%;
+  padding-top: 15px;
+  padding-left: 189px; }
+  .header-wrap {
+    width: 662px; }
+  .header_heading {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 700;
+    font-size: 70px;
+    margin-top: 80px;
+    margin-bottom: 72px; }
+  .header_text {
+    font-family: "Hind", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #313f4d;
+    margin-bottom: 60px; }
+
+.landing-logo, .footer_logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Hind", sans-serif; }
+  .landing-logo p, .footer_logo p {
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 12px; }
+  .landing-logo span, .footer_logo span {
+    display: block;
+    font-family: "Hind", sans-serif;
+    font-weight: 400;
+    font-size: 10px; }
+
+.header_button, .section_banner_button {
+  width: 144px;
+  height: 48px;
+  color: white;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #699900; }
+
+.login {
+  display: inline-block;
+  margin-left: 150px;
+  color: white;
+  font-family: "Hind", sans-serif;
+  font-weight: 600;
+  font-size: 20px; }
+
+.section {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 208px;
+  background-color: #fff; }
+  .section_text {
+    font-size: 40px;
+    font-family: "Hind", sans-serif;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.56;
+    margin-bottom: 48px; }
+  .section_link {
+    display: inline-block;
+    margin-left: 150px;
+    color: white;
+    font-family: "Hind", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    font-size: 14px;
+    display: block;
+    margin: 0;
+    text-align: center;
+    color: #bbbeaa; }
+  .section_card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 1116px;
+    height: 326px;
+    background-color: #21232e;
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    margin: 0 auto;
+    margin-bottom: 25px; }
+    .section_card_right_container {
+      width: 474px;
+      margin-left: 86px; }
+    .section_card_img {
+      width: 434px;
+      height: 289px; }
+    .section_card_heading {
+      text-align: center;
+      margin: 0;
+      margin-bottom: 50px;
+      font-family: "Hind", sans-serif;
+      font-size: 24px;
+      font-weight: 600;
+      color: #fff; }
+    .section_card_text {
+      color: #bbbeaa;
+      margin: 0;
+      margin-bottom: 30px;
+      font-family: "Hind", sans-serif;
+      font-weight: 400;
+      font-size: 18px; }
+    .section_card:last-child {
+      margin-bottom: 0; }
+  .section_banner {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, 53%);
+            transform: translate(-50%, 53%);
+    width: 1197px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 34px 158px 36px 162px;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-image: -webkit-gradient(linear, left top, right top, from(#61911b), to(#315fca));
+    background-image: linear-gradient(to right, #61911b, #315fca); }
+    .section_banner_heading {
+      margin: 0;
+      font-family: "Hind", sans-serif;
+      color: #2c2f3c;
+      line-height: 1.55;
+      font-size: 30px;
+      font-weight: 700; }
+    .section_banner_text {
+      font-size: 16px;
+      font-family: "Hind", sans-serif;
+      color: #bdc2ce; }
+
+.footer {
+  background-color: #21232e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 140px 189px 50px 190px; }
+  .footer-wrap {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .footer_logo {
+    color: #fff; }
+  .footer_text {
+    width: 300px;
+    color: #fff;
+    font-family: "Hind", sans-serif;
+    font-size: 14px;
+    margin: 0; }
+  .footer-cr {
+    color: #fff;
+    font-family: "Hind", sans-serif;
+    font-size: 18px; }

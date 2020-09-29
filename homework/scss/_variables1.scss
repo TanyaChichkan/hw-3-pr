@@ -1,0 +1,57 @@
+$background: url('../img/m-h-day.jpg');
+$headerСolor: #2c2f3c;
+$headerTextcolor: #313f4d;
+$backgrHeadcolor: #14a0c7;
+$buttonColor: #699900;
+$sectionBackColor: #fff;
+$sectionTitle: #000;
+$cardBackColor: #21232e;
+$cardTextColor: #bbbeaa;
+$cardTextHeading: #fff;
+$gradient1Color: #61911b;
+$gradient2Color: #315fca;
+$bannerHeaderColor: #2c2f3c;
+$bannerTextColor: #bdc2ce;
+$footerBackColor: #21232e;
+$footerLogoColor: #fff;
+$font-1: 'Source Sans Pro', sans-serif;
+$font-2: 'Hind', sans-serif;
+$font-3: 'Fresca', sans-serif;
+
+
+
+@mixin button{
+    width: 144px;
+    height:48px;
+    color: white;
+    font-family: $font-1;
+    font-weight: 600;
+    font-size: 20px;
+    border:none;
+    border-radius: 5px;
+}
+
+@mixin link{
+    display: inline-block;
+    margin-left: 150px;
+    color: white;
+    font-family: $font-2;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+
+
+$section-colors:(
+text:$sectionTitle,
+card:$cardTextColor
+);
+
+.section {
+    @each $section, $color in $section-colors{
+        &_#{$section}{
+            color: $color;
+        }
+    }
+};
+

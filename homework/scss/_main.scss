@@ -1,0 +1,237 @@
+*{
+    box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.header{
+    background-image: $background;
+    background-repeat: no-repeat;
+    background-size:  cover;
+    height: 718px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-bottom-right-radius: 40%;
+    padding-top: 15px;
+    padding-left: 189px;
+
+
+    &-wrap{
+    width: 662px;
+    
+    
+}
+
+
+    &_heading{
+    font-family: $font-1;
+    font-weight: 700;
+    font-size: 70px;
+    margin-top: 80px;
+    margin-bottom: 72px;
+
+}
+
+
+    &_text{
+    font-family: $font-2;
+    font-weight: 400;
+    font-size: 15px;
+    color: $headerTextcolor;
+    margin-bottom: 60px;
+}
+}
+
+.landing-logo{
+    display: flex;
+    font-family: $font-2;
+    
+    p{
+        
+        font-weight: 700;
+        font-size: 20px;
+        margin-left: 12px;
+        
+
+    }
+
+    span{
+        display: block;
+        font-family: $font-2;
+        font-weight: 400;
+        font-size: 10px;
+
+    }
+}
+
+.header_button{
+    @include button;
+    background-color: $buttonColor;
+}
+
+.section_banner_button{
+    @extend .header_button;
+}
+
+.login{
+    @include link;
+}
+
+.section{
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 208px;
+    background-color: $sectionBackColor;
+
+
+    &_text{
+    font-size: 40px;
+    font-family: $font-2;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.56;
+    margin-bottom: 48px;
+}
+
+&_link{
+    @include link;
+    font-size: 14px;
+    display: block;
+    margin: 0;
+    text-align: center;
+    color: $cardTextColor;
+}
+
+
+&_card{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1116px;
+    height: 326px;
+    background-color: $cardBackColor;
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+
+    &_right_container{
+
+        width: 474px;
+        margin-left: 86px;
+        
+    }
+
+    &_img{
+    width: 434px;
+    height: 289px;
+    }
+
+    &_heading{
+        text-align: center;
+        margin: 0;
+        margin-bottom: 50px;
+        font-family: $font-2;
+        font-size: 24px;
+        font-weight: 600;
+        color: $cardTextHeading;
+    }
+
+    &_text{
+        color: $cardTextColor;
+        margin:0;
+        margin-bottom: 30px;
+        font-family: $font-2;
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+    &:last-child{
+        margin-bottom: 0;
+    }
+    
+
+}
+
+&_banner{
+    position: absolute;
+    z-index: 1;
+    bottom:0;
+    left: 50%;
+    transform: translate(-50%, 53%);
+    width: 1197px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 34px 158px 36px 162px;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, $gradient1Color,$gradient2Color);
+
+    &_heading{
+        margin: 0;
+        font-family: $font-2;
+        color: $bannerHeaderColor;
+        line-height: 1.55;
+        font-size:30px;
+        font-weight: 700;
+
+    }
+
+    &_text{
+        font-size: 16px;
+        font-family: $font-2;
+        color: $bannerTextColor;
+    }
+}
+}
+
+.footer{
+    background-color: $footerBackColor;
+    display: flex;
+    padding: 140px 189px 50px 190px;
+ 
+
+    &-wrap{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    }
+
+    &_logo{
+        @extend .landing-logo;
+        color: $footerLogoColor;
+    }
+
+    &_text{
+        width: 300px;
+        color: $footerLogoColor;
+        font-family: $font-2;
+        font-size: 14px;
+        margin: 0;
+    }
+
+    &-cr{
+        color: $footerLogoColor;
+        font-family: $font-2;
+        font-size: 18px;
+
+    }
+}
+
