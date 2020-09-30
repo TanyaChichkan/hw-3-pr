@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: $sectionBackColor;
+}
+
 p {
   margin: 0;
   padding: 0;
@@ -15,8 +19,7 @@ img {
 
 
 .header{
-    background-image: $background;
-    background-repeat: no-repeat;
+    background: $background no-repeat;
     background-size:  cover;
     height: 718px;
     background-size: cover;
@@ -35,11 +38,27 @@ img {
 
 
     &_heading{
+    position: relative;
     font-family: $font-1;
     font-weight: 700;
     font-size: 70px;
     margin-top: 80px;
     margin-bottom: 72px;
+    z-index:2;
+    color: $headerСolor;
+
+    &:after{
+  content: '';
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+    background-color: $backgrHeadcolor;
+    width: 293px;
+    height: 25%;
+    transform: translateY(-29%);
+
+    }
 
 }
 
@@ -55,7 +74,9 @@ img {
 
 .landing-logo{
     display: flex;
+    align-items: center;
     font-family: $font-2;
+    color: $headerСolor;
     
     p{
         
@@ -70,7 +91,7 @@ img {
         display: block;
         font-family: $font-2;
         font-weight: 400;
-        font-size: 10px;
+        font-size: 15px;
 
     }
 }
@@ -96,12 +117,25 @@ img {
 
 
     &_text{
+    position: relative;
+    z-index: 2;
     font-size: 40px;
     font-family: $font-2;
     font-weight: 600;
     text-align: center;
     line-height: 1.56;
     margin-bottom: 48px;
+
+    &:after{
+    content: ' ';
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    background-color: $backgrHeadcolor;
+    width: 190px;
+    height: 50px;
+    transform: translate(-100%,-28%);
+    }
 }
 
 &_link{
@@ -183,12 +217,26 @@ img {
     background-image: linear-gradient(to right, $gradient1Color,$gradient2Color);
 
     &_heading{
+        position: relative;
+        z-index: 1;
         margin: 0;
         font-family: $font-2;
         color: $bannerHeaderColor;
         line-height: 1.55;
         font-size:30px;
         font-weight: 700;
+
+        &:after{
+            content: ' ';
+            position: absolute;
+            z-index: -1;
+            bottom: 0;
+            left:0;
+            background-color: $backgrHeadcolor;
+            width: 65px;
+            height: 52px;
+            transform: translate(192%, -17%);
+        }
 
     }
 

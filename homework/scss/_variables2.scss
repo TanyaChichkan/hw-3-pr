@@ -1,0 +1,58 @@
+$background: url('../img/m-h-night.jpg');
+$headerСolor: #fff;
+$headerTextcolor: #fff;
+$backgrHeadcolor: #ff4e33;
+$buttonColor: #e3ac00;
+$sectionBackColor: #21232e;
+$sectionTitle: #fff;
+$cardBackColor: #3b3f50;
+$cardTextHeading: #fff;
+$cardTextColor: #c8d1c9;
+$gradient1Color: #db9f08;
+$gradient2Color: #942f50;
+$bannerHeaderColor: #fff;
+$bannerTextColor: #ccb18e;
+$footerBackColor: #3b3f50;
+$footerLogoColor: #d1d1d1;
+
+$font-1: 'Source Sans Pro', sans-serif;
+$font-2: 'Hind', sans-serif;
+$font-3: 'Fresca', sans-serif;
+
+
+
+@mixin button{
+    width: 144px;
+    height:48px;
+    color: white;
+    font-family: $font-1;
+    font-weight: 600;
+    font-size: 20px;
+    border:none;
+    border-radius: 5px;
+}
+
+@mixin link{
+    display: inline-block;
+    margin-left: 150px;
+    color: white;
+    font-family: $font-2;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+
+
+$section-colors:(
+text:$sectionTitle,
+card:$cardTextColor
+);
+
+.section {
+    @each $section, $color in $section-colors{
+        &_#{$section}{
+            color: $color;
+        }
+    }
+};
+
